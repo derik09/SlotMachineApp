@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+<body>
+    <h1>Slot Machine</h1>
+    <br>
+    <div style="text-align: center;">
+        <label value="Enter your stake:">Enter your stake:</label>
+        <input type="number" id="stakeSelector" name="Stake Selector" min="1" max="100" value="1">
+    </div>
+    <div id="sm">
+        <div class="group lever">
+            <button id="btnStart">Spin</button>
+        </div>
+
+        <div class="group">
+            <div class="reel" id="reel0"></div>
+            <div class="reel" id="reel1"></div>
+            <div class="reel" id="reel2"></div>
+        </div>
+        <div class="result">
+            <div id="balance">Balance : 100</div>
+            <div id="stake">Stake: 0</div>
+            <div id="win">Win : 0</div>
+            <!-- <audio id="audio" src="http://www.soundjay.com/button/beep-07.wav"></audio> -->
+
+        </div>
+        <script src="./build/app.bundle.js"></script>
+    </div>
+</body>
+</html>
